@@ -1,0 +1,50 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version U-2023.03-SP2-1_Full64; Runtime version U-2023.03-SP2-1_Full64;  May  7 00:13 2024
+Loading memory file: programs/sw_hazard.mem
+Using writeback output file: output/sw_hazard.wb
+@@
+@@
+@@                     0  Asserting System reset......
+@@
+@@                     0 : System STILL at reset, can't show anything
+@@
+@@
+@@                   300 : System STILL at reset, can't show anything
+@@
+@@
+@@                   600 : System STILL at reset, can't show anything
+@@
+@@
+@@                   900 : System STILL at reset, can't show anything
+@@
+@@                  1060  Deasserting System reset......
+@@
+@@
+@@@ Unified Memory contents hex on left, decimal on right: 
+@@@
+@@@ mem[    0] = 0020009300100113 : 9007830615982355
+@@@ mem[    8] = 10322023021101b3 : 1167030588172992947
+@@@ mem[   16] = 0002208300420213 : 598696970551827
+@@@ mem[   24] = 10322023021101b3 : 1167030588172992947
+@@@ mem[   32] = 0000000010500073 : 273678451
+@@@
+@@@
+@@                  5720 : System halted
+@@
+@@@ System halted on memory error
+@@@
+@@
+@@  16 cycles / 3 instrs = 5.333333 CPI
+@@
+@@  450.00 ns total time to execute
+@@
+
+$finish called from file "test/pipeline_test.sv", line 459.
+$finish at simulation time                 6720
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 672000 ps
+CPU Time:      0.280 seconds;       Data structure size:   0.4Mb
+Tue May  7 00:13:01 2024
