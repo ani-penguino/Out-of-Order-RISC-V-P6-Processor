@@ -35,25 +35,6 @@ make <module>.cov.vdb     <- runs the executable and creates the <module>.cov.vd
 make <module>_cov_report  <- run urg to create human readable coverage reports
 ```
 
-### Pipeline Files
-
-The two files `verilog/pipeline.sv` and `test/pipeline_test.sv` have
-been edited to comment-out or remove project 3 specific code, so you
-should be able to re-use them when you want to start integrating your
-modules into a full processor again.
-
-We've added an `icache` module in `verilog/icache.sv`. That file has
-more comments explaining how it works, but the idea is it stores
-memory's response tag until memory returns that tag with the data. More
-about how our processor's memory works will be presented in the final
-lab section.
-
-The file `psel_gen.sv` implements an incredibly efficient parameterized
-priority selector (remember project 1?!). many tasks in superscalar
-processors come down to priority selection, so instead of writing
-manual for-loops, try to use this module. It is faster than any
-priority selector the instructors are aware of (as far as my last
-conversation about it with Brehob).
 
 The following Makefile rules are available to run programs on the
 processor:
