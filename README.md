@@ -1,8 +1,3 @@
-
-# EECS 470 Final Project
-
-Welcome to the EECS 470 Final Project!
-
 This is the repository for your implementation of an out-of-order,
 synthesizable, RISC-V processor with advanced features.
 
